@@ -233,9 +233,10 @@ Manya V - U03ZW24S0126 5th semester BCA B
 Chinmay N - U03ZW24S0050 5th semester BCA B
 James Reynold Francis - U03ZW24S0019 BCA B
 
-##13. Wokwi Project Link
+***13. Wokwi Project Link***
+https://wokwi.com/projects/475506156745737217
 
-
-##14. ThingSpeak Channel Link
+***14. ThingSpeak Channel Link***
+https://thingspeak.mathworks.com/channels/3499322
 
 
