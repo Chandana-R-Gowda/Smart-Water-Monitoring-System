@@ -1,7 +1,7 @@
 # Smart-Water-Monitoring-System
 IoT-based Smart Water Monitoring System using ESP32, Wokwi and ThingSpeak.
 
-##2. Problem Statement
+**2. Problem Statement**
 Traditional water tank monitoring systems often require manual checking of water levels and may not provide continuous information about environmental conditions or water quality. Manual monitoring can lead to water overflow, insufficient water availability, and delayed detection of poor water conditions.
 
 The Smart Water Monitoring System is designed to monitor water level, temperature, humidity, and simulated water quality using an ESP32-based IoT system. The system automatically controls a water pump according to the water level and safety conditions. It also provides an alarm when the simulated water quality falls below the defined safe threshold.
