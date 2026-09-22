@@ -2,13 +2,15 @@
 IoT-based Smart Water Monitoring System using ESP32, Wokwi and ThingSpeak.
 
 ***2. Problem Statement***
+
 Traditional water tank monitoring systems often require manual checking of water levels and may not provide continuous information about environmental conditions or water quality. Manual monitoring can lead to water overflow, insufficient water availability, and delayed detection of poor water conditions.
 
 The Smart Water Monitoring System is designed to monitor water level, temperature, humidity, and simulated water quality using an ESP32-based IoT system. The system automatically controls a water pump according to the water level and safety conditions. It also provides an alarm when the simulated water quality falls below the defined safe threshold.
 
 The system sends the monitored data to the ThingSpeak cloud platform, allowing the data to be viewed remotely through graphs and providing a cloud-based pump control command.
 
-##3. Objectives
+***3. Objectives***
+
 To monitor the water level of a tank using an HC-SR04 ultrasonic sensor.
 
 To monitor temperature and humidity using a DHT22 sensor.
@@ -29,7 +31,8 @@ To implement safety conditions that prevent the pump from operating when water q
 
 To visualize the monitored data through ThingSpeak graphs.
 
-##4. Components and Software Used
+***4. Components and Software Used***
+
 Hardware Components
 ESP32 Development Board
 HC-SR04 Ultrasonic Sensor
@@ -50,7 +53,8 @@ ThingSpeak — for IoT cloud data monitoring and remote pump-control commands
 
 GitHub — for storing and documenting the project
 
-##5. Circuit Diagram
+***5. Circuit Diagram***
+
 The circuit is designed using an ESP32 and the required sensors and output devices. The ESP32 acts as the main controller and communicates with the sensors, relay, LEDs, buzzer, and ThingSpeak cloud platform.
 
 The main connections are:
@@ -66,7 +70,8 @@ Red LED	GPIO 25
 Buzzer	GPIO 27
 The DHT22 and potentiometer are powered from 3.3V, while the HC-SR04 and relay module are powered from 5V. All components share a common ground with the ESP32.
 
-##6. Working Principle
+***6. Working Principle***
+
 The Smart Water Monitoring System uses an ESP32 as the main controller. The system continuously collects data from the connected sensors and uses the measured values to monitor the condition of the water tank.
 
 The HC-SR04 ultrasonic sensor measures the distance between the sensor and the water surface. This distance is used to calculate the water level percentage based on the assumed tank height of 100 cm.
@@ -81,7 +86,8 @@ The system communicates with the ThingSpeak cloud platform through Wi-Fi. Sensor
 
 The green LED indicates normal operation, while the red LED and buzzer indicate a poor water-quality alarm.
 
-##7. Program Explanation
+***7. Program Explanation***
+
 The ESP32 program is written in MicroPython and is divided into several functional sections.
 
 a] Library and Hardware Initialization
@@ -120,7 +126,8 @@ The green LED indicates normal operation. When poor water quality is detected, t
 i] Continuous Monitoring
 After processing the sensor readings and updating ThingSpeak, the program waits for 20 seconds and repeats the process. This allows the system to continuously monitor the water tank and update the cloud platform.
 
-##8. Output
+***8. Output***
+
 The Smart Water Monitoring System was successfully simulated and tested in Wokwi. The system responded correctly to different water-level, water-quality, and cloud-control conditions. The following outputs were observed during testing:
 
 Automatic Mode
@@ -167,7 +174,7 @@ Water Distance
 Pump Control
 The ThingSpeak graphs displayed the sensor readings and system status received from the ESP32.
 
-##9. Applications
+***9. Applications***
 The Smart Water Monitoring System demonstrates how IoT technology can be used for water management, monitoring, automation, and remote control.
 
 The system can be applied in the following areas:
@@ -182,7 +189,7 @@ Water-Quality Alert Systems: With an appropriate real water-quality sensor repla
 
 IoT and Automation Education: The project can be used as an educational model for learning ESP32 programming, sensor interfacing, relay control, cloud communication, data visualization, and IoT-based automation.
 
-##10. Limitations
+***10. Limitations***
 The Smart Water Monitoring System has the following limitations:
 
 The project is developed and tested in the Wokwi simulation environment and has not been tested as a physical hardware installation.
@@ -199,7 +206,8 @@ The prototype uses predefined thresholds for water level and simulated water qua
 
 The simulated relay controls the pump logic in Wokwi, but the project does not represent the complete electrical and safety requirements of controlling a real water pump.
 
-##11. Future Scope
+***11. Future Scope***
+
 The Smart Water Monitoring System can be further improved and extended in the following ways:
 
 Real Water-Quality Sensor: The potentiometer used in the prototype can be replaced with a suitable calibrated water-quality or turbidity sensor for real-world measurements.
@@ -218,7 +226,7 @@ Solar-Powered Operation: A suitable solar power system and battery could be adde
 
 Physical Hardware Implementation: The Wokwi prototype can be converted into a physical ESP32-based system with appropriate electrical protection and a properly rated pump-control circuit.
 
-Team Member's Details
+***Team Member's Details***
 
 Chanadana R - U03ZW24S0012 5th semester BCA B
 Manya V - U03ZW24S0126 5th semester BCA B
